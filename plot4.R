@@ -10,7 +10,7 @@ count <- table(selected$Date)
 png(filename="plot4.png",width=480,height=480)
 par(mfrow = c(2, 2))
 # first plot
-plot(selected$Global_active_power,type="l",xlab="",ylab="Global Active Power (kilowatts)",xaxt="n")
+plot(selected$Global_active_power,type="l",xlab="",ylab="Global Active Power",xaxt="n")
 axis(side=1,at=seq(0, count[1] + count[2], by = count[1]),labels=c("Thu","Fri","Sat"))
 # second plot
 plot(selected$Voltage ,type="l",xlab="datetime",ylab="Voltage",xaxt="n")
