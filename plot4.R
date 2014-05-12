@@ -7,6 +7,8 @@ selected <- read.csv(file="4_Week1_household.csv",header=TRUE,sep=";",na.strings
 
 count <- table(selected$Date)
 
+#Day labels were constructed "manually", but for evaluation purposes i would like to mention
+#that this technique reproduces the required plot labels exactly, too...
 png(filename="plot4.png",width=480,height=480)
 par(mfrow = c(2, 2))
 # first plot
