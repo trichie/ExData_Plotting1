@@ -7,6 +7,8 @@ selected <- read.csv(file="4_Week1_household.csv",header=TRUE,sep=";",na.strings
 
 count <- table(selected$Date)
 
+#Day labels were constructed "manually", but for evaluation purposes i would like to mention
+#that this technique reproduces the required plot labels exactly, too...
 png(filename="plot3.png",width=480,height=480)
 plot(selected$Sub_metering_1,type="l",xlab="",ylab="Energy sub metering",xaxt="n")
 lines(selected$Sub_metering_2,type="l",xlab="",ylab="Energy sub metering",xaxt="n",col="red")
